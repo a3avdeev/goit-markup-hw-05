@@ -5,6 +5,8 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
@@ -118,6 +120,9 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .nav-list-link:hover,
@@ -168,6 +173,9 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .header-contact-link:hover,
@@ -185,6 +193,9 @@ li {
 .header-contacts-icon {
   fill: var(--secondary-text-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 /* hero section */
@@ -421,10 +432,16 @@ li {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .social-link-icon {
   fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .social-link:hover .social-link-icon,
@@ -466,10 +483,17 @@ li {
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .clients-link-icon {
   fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .clients-link:hover,
@@ -512,6 +536,9 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-contacts-link {
@@ -522,6 +549,9 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-contacts-address:hover,
@@ -571,10 +601,16 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-social-link-icon {
   fill: #ffffff;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-social-link:hover .footer-social-link-icon,
