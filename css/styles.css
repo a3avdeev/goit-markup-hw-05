@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 
 }
 
@@ -121,7 +122,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -174,7 +175,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -194,7 +195,7 @@ li {
   fill: var(--secondary-text-color);
   margin-right: 10px;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -433,14 +434,14 @@ li {
   border-radius: 50%;
   background-color: #ffffff;
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
 .social-link-icon {
   fill: var(--icon-color);
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -485,14 +486,14 @@ li {
   border-radius: 4px;
 
   transition-property: border-color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
 .clients-link-icon {
   fill: var(--icon-color);
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -537,7 +538,7 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -550,7 +551,7 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -602,14 +603,14 @@ address {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
 .footer-social-link-icon {
   fill: #ffffff;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 

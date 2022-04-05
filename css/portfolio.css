@@ -5,6 +5,8 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
+
 }
 
 body {
@@ -119,7 +121,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -172,7 +174,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -186,7 +188,7 @@ li {
   fill: var(--secondary-text-color);
   margin-right: 10px;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -229,7 +231,7 @@ li {
   background-color: #f5f4fa;
   border-radius: 4px;
   transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -258,7 +260,7 @@ li {
   margin-right: 30px;
   margin-bottom: 30px;
   transition-property: box-shadow;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -310,14 +312,16 @@ li {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 62px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition-property: transform; 
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .portfolio-list-item:hover .overlay-content,
@@ -354,7 +358,7 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -367,7 +371,7 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
@@ -419,14 +423,14 @@ address {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
 .footer-social-link-icon {
   fill: #ffffff;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
 
